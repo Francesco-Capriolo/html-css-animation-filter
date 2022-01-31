@@ -1,0 +1,112 @@
+/* esercizio 1 */
+
+div.ex-1-square:hover {
+    background-color: red;
+    transition-duration: 2s;
+}
+
+/* esercizio 2 */
+
+div.ex-2-square:active {
+    width: 100%;
+    transition: 2s;
+}
+
+/* esercizio 3 */
+
+div.ex-3-square:hover {
+    border-radius: 50%;
+    transition: 3s;
+}
+
+/* esercizio 4 */
+
+div.ex-4-square:hover {
+    background-color: transparent;
+    transition: 3s;
+}
+
+/* esercizio 5 */
+
+div.ex-5-square {
+    transition: 2s;
+}
+
+div.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+}
+
+div.ex-5-square:active {
+    width: 30px;
+    height: 30px;
+}
+
+/* esercizio 6 */
+
+div.well:hover .ex-6-img {
+    filter: saturate(0)
+}
+
+/* esercizio 7 */
+
+div.well:hover img.ex-7-img {
+    transition: 3s;
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+/* esercizio 8 */
+
+div.well:hover img.ex-8-img {
+    border-radius: 20px;
+    filter: grayscale(50%);
+    border: 5px solid;
+}
+
+/* esercizio 9 */
+
+div.well:hover img.ex-9-img {
+    transition: 2s;
+    transform: scale(1.5);
+    filter: sepia(1);
+    border-radius: 20px;
+}
+
+/*  esercizio 10 */
+
+i.ex-10-icon {
+    animation: rotate 3s linear infinite;
+    /*     animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* esercizio 11 */
+
+div.well:hover i.ex-11-icon {
+    animation: spinreverse 4s infinite;
+}
+
+@keyframes spinreverse {
+    80% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*  esercizio 12 */
