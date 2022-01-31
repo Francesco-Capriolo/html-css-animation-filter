@@ -111,12 +111,12 @@ div.well:hover i.ex-11-icon {
 /*  esercizio 12 */
 
 a.ex-12-button:hover div.ex-12-top-white {
-    animation: toplinear 3s linear;
+    animation: toplinear 3s linear infinite;
 }
 
 @keyframes toplinear {
     50% {
-        left: calc(100% - 70px);
+        left: 70%;
     }
 
     100% {
@@ -125,15 +125,79 @@ a.ex-12-button:hover div.ex-12-top-white {
 }
 
 a.ex-12-button:hover div.ex-12-bottom-white {
-    animation: bottomlinear 3s linear;
+    animation: bottomlinear 3s linear infinite;
 }
 
 @keyframes bottomlinear {
     50% {
-        right: calc(100% - 70px);
+        right: 70%;
     }
 
     100% {
         right: 10%;
     }
+}
+
+/*  esercizio 13 */
+
+a.ex-13-button:hover div.ex-13-top-white {
+    animation: slidetop 5s linear infinite;
+}
+
+@keyframes slidetop {
+    25% {
+        left: 80%;
+        top: -10px;
+    }
+
+    45% {
+        left: 80%;
+        top: 50px;
+    }
+
+    75% {
+        left: -10%;
+        top: 50px;
+    }
+
+    95% {
+        left: -10%;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+    }
+
+}
+
+a.ex-13-button:hover div.ex-13-bottom-white {
+    animation: slidebottom 5s linear infinite;
+}
+
+@keyframes slidebottom {
+    25% {
+        right: 80%;
+        bottom: -10px;
+    }
+
+    45% {
+        right: 80%;
+        bottom: 50px;
+    }
+
+    75% {
+        right: -10%;
+        bottom: 50px;
+    }
+
+    95% {
+        right: -10%;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 10%;
+    }
+
 }
