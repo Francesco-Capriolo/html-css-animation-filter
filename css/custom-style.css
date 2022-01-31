@@ -108,5 +108,32 @@ div.well:hover i.ex-11-icon {
     }
 }
 
-
 /*  esercizio 12 */
+
+a.ex-12-button:hover div.ex-12-top-white {
+    animation: toplinear 3s linear;
+}
+
+@keyframes toplinear {
+    50% {
+        left: calc(100% - 70px);
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+a.ex-12-button:hover div.ex-12-bottom-white {
+    animation: bottomlinear 3s linear;
+}
+
+@keyframes bottomlinear {
+    50% {
+        right: calc(100% - 70px);
+    }
+
+    100% {
+        right: 10%;
+    }
+}
